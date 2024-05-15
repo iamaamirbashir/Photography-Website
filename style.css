@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Vollkorn", serif;
+    font-family: "Courier Prime", monospace;
+    font-family: "Work Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+
+} */
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+.header {
+  height: 100vh;
+  padding: 50px 80px;
+  position: relative;
+}
+
+.bgimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./Images/theme_8_c5c72c66_XL.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(0.8);
+  z-index: -10;
+  transition: background-image 0.6s ease-in-out;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+}
+.logo {
+  font-family: "Vollkorn", serif;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: white;
+}
+
+.logo h1:hover {
+  color: #5e4e3f;
+  /* text-decoration: underline; */
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.nav-items ul {
+  width: 500px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav-items ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-items ul li a:hover {
+  color: #f5f0eb;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-items ul ul {
+  display: none;
+  /* display: flex; */
+  position: absolute;
+  z-index: 1000;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  width: auto;
+  padding: 5px;
+  background-color: rgb(140, 136, 136, 0.2);
+}
+
+.nav-items ul ul li {
+  margin: 10px;
+}
+.nav-items ul li:hover ul {
+  display: block;
+}
+
+.header-main-text {
+  font-family: "Times New Roman", Times, serif, monospace;
+  font-size: 35px;
+  color: white;
+  font-weight: 800;
+  margin-top: 80px;
+  letter-spacing: 3px;
+}
+
+.header-mid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 80px;
+  font-family: "Courier Prime", monospace;
+  letter-spacing: 2px;
+  color: white;
+}
+.button {
+  font-weight: 500;
+  font-size: 10px;
+  background-color: #646c70;
+  color: white;
+  border: none;
+  padding: 15px 80px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #5e5d5d;
+  transition: 0.3s ease-in-out;
+}
+
+.header-mid p {
+  line-height: 30px;
+  text-align: right;
+}
+
+hr {
+  color: #fff;
+  background-color: #fff;
+  width: 100%;
+  height: 2.5px;
+  border: none;
+  /* border-style: solid; */
+  margin-top: 40px;
+  padding: 0;
+}
+.header-last {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  font-family: "Courier Prime", monospace;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.header-last svg {
+  cursor: pointer;
+}
+
+/* Middle First Section */
+
+.middle-first {
+  background-color: #f6f6f2;
+  padding: 60px 100px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.middle-first-section-one,
+.middle-first-section-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.middle-first-section-one-text1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  margin-top: 20%;
+}
+
+.middle-first-section-one-text2 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: right;
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.middle-first-section-two-img {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+.middle-first-section-two-img div {
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+}
+.middle-first-section-two-img div img {
+  width: auto;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.middle-first-section-two-img div img:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.middle-first-section-two-text {
+  flex: 1.5;
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 100px 60px 0 150px;
+  line-height: 25px;
+  text-align: justify;
+}
+.middle-first-section-two-link {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+/* Middle Second Section */
+
+.middle-second {
+  background-color: #d9dccd;
+  height: 100vh;
+  padding: 20px;
+}
+
+.middle-second div {
+  height: 100%;
+  width: 100%;
+  background-image: url(./Images/theme_8_d61f7533_XL.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px solid red;
+  color: white;
+  position: relative;
+}
+
+.middle-second div p {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  word-spacing: 30px;
+}
+
+.middle-second div h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 5px;
+  word-spacing: 20px;
+  text-align: center;
+}
+.middle-third {
+  height: auto;
+}
+
+.middle-third-text {
+  font-family: "Vollkorn", serif;
+  text-align: center;
+  margin: 50px 25%;
+}
+
+.middle-third-text h1 {
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.middle-third-text p {
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.middle-third-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.middle-third-img div {
+  margin: 0 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 0 0 auto;
+}
+
+.middle-third-img div:nth-last-child(1) {
+  background-image: url(./Images/montreal_4-6fa32eaa.jpg);
+}
+.middle-third-img div:nth-last-child(2) {
+  background-image: url(./Images/montreal_5-3981ad57.jpg);
+}
+.middle-third-img div:nth-last-child(3) {
+  background-image: url(./Images/montreal_6-9844eb47.jpg);
+}
+.middle-third-img div:nth-last-child(4) {
+  background-image: url(./Images/montreal_21-c318e372.jpg);
+}
+
+.middle-third-img div:nth-last-child(even) {
+  width: 1000px;
+  height: 600px;
+  background-color: #0b0808;
+}
+
+.middle-third-img div:nth-last-child(odd) {
+  width: 400px;
+  height: 600px;
+  background-color: #df9898;
+}
+.middle-third-last {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.middle-third-last svg,
+.middle-third-last div {
+  margin: 50px;
+  cursor: pointer;
+  color: black;
+}

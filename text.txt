@@ -1,0 +1,32 @@
+FONTS :
+    Segoe UI - 400:
+        Style normal 
+        Weight 400
+        Size16px 
+        Line Height 24px
+
+    Courier Prime - 700
+        
+
+        Family
+        "Courier Prime", monospace
+        Weight 700
+        size 13px
+        Line Height 13px
+
+    Vollkorn - 500
+    logo
+
+        Family Vollkorn, serif
+        Weight 500
+        Size 26px
+        Line Height 26px
+
+    Work Sans - 500
+
+        Family "Work Sans", sans-serif
+
+        Weight500
+        Color rgb(98, 67, 50)
+        Size 15px
+        Line Height 26px
